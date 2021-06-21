@@ -1,14 +1,16 @@
 
+import ImageToggleOnMouseOver from '../src/ImageToggleOnMouseOver'
+
 const ImageChangeOnMouseOver = (props) => {
 
   return (
     <div>
-      <ImageToogleOnMouseOver 
+      <ImageToggleOnMouseOver
         primaryImg="/static/speakers/bw/Speaker-187.jpg" 
         secondaryImg="/static/speakers/Speaker-187.jpg"
         alt="" />
       &nbsp;&nbsp;&nbsp;
-      <ImageToogleOnMouseOver 
+      <ImageToggleOnMouseOver
         primaryImg="/static/speakers/bw/Speaker-1124.jpg" 
         secondaryImg="/static/speakers/Speaker-1124.jpg"
         alt="" />
