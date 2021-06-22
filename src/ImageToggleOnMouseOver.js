@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 
 const ImageToggleOnMouseOver = (props) => {
-  const {primaryImg, secondaryImg, alt} = props;
+  const { primaryImg, secondaryImg, alt } = props;
 
   const imageRef = useRef(null);
 
@@ -14,11 +14,12 @@ const ImageToggleOnMouseOver = (props) => {
   }
 
   return (
-    <img 
-      onMouseOver = {mouseOverHandler}
+    <img
+
+      onMouseOver={mouseOverHandler}
       onMouseOut={mouseOutHandler}
-      src={primaryImg} alt={alt} 
-      ref={imageRef}/>
+      src={primaryImg} alt={alt}
+      ref={imageRef} />
   )
 }
 
