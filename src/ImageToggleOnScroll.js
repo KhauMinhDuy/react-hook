@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 
-
 const ImageToggleOnScroll = (props) => {
   const {primaryImg, secondaryImg} = props;
 
+  const [isLoading, setisLoading] = useState(false);
   const [inView, setInView] = useState(false);
 
   const imageRef = useRef(null);
@@ -24,10 +24,8 @@ const ImageToggleOnScroll = (props) => {
     setInView(isInView());
   }
 
-
   return (
     <img
-
       src={inView ? secondaryImg : primaryImg} 
       alt=""
       ref={imageRef} 
